@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    display: flex;
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+/* The navigation menu links */
+.sidenav a {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding: 6px 8px 6px 5px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #8a8a8a;
+    display: block;
+    position: relative;
+    justify-content: center;
+}
+
+.sidenav a::after{
+    content: '';
+    position: absolute;
+    background: #8a8a8a;
+    width: 100%;
+    bottom: 5px;
+    height: 2px;
+    border-radius: 5px;
+    left: 0;
+    transform: scale(0);
+    transition: transform .5s ease;
+}
+
+.sidenav a:hover::after{
+    transform: scale(1);
+}
+  
+
+/* Style page content */
+.main {
+    margin-left: 200px; /* Misma medida que la barra lateral */
+    padding: 20px;
+    background: linear-gradient(135deg, #0294bd, #3567a5);
+    min-height: 100vh; /* Asegura que el fondo cubra toda la página */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3); /* Sombras internas */
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

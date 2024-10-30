@@ -1,0 +1,158 @@
+.titulo{
+    text-align: center;
+    margin-top: 35px;
+    color: #dbdbdb;
+}
+
+.contenedor {
+    margin: 40px; 
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */
+    flex-direction: column;
+}
+.contenedor h2{
+    color: #dbdbdb;
+}
+
+.contenedor p{
+    text-align: justify;
+}
+
+.contenedor ul{
+    list-style-type: none;
+}
+#section1{
+    border-top: 2px solid #dbdbdb;
+}
+
+.section {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.section h3 {
+    color: #113e6d;
+    margin: 5px;
+}
+
+form{
+    width: 400px;
+    margin: 30px; 
+    display: inline-flex;
+    justify-content: center; /* Centrar horizontalmente */
+    flex-direction: column;
+}
+
+.input{
+    margin-top: 5px;
+    width: 250px;
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition: border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    height: 36px;
+}
+
+.input:hover{
+    border-color: #000000;
+}
+
+.input:focus{
+    border-color: #00a2ff;
+    background: #fff;
+    outline: none;
+}
+
+#combobox{
+    width: 100px;
+}
+
+.boton{
+    height: 45px;
+    width: 150px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: large;
+    color: #e6e4e4;
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.boton:hover{
+    background-color: #fff;
+    color: #242424;
+}
+
+.tabla-grid {
+    width: 50%; /* Ajuste del ancho de la tabla al 45% para alinearse a la derecha del formulario */
+    
+    margin-top: 30px;
+    margin-right: 100px; /* Elimina el margen superior para alinear con el formulario */
+    justify-content: flex-start;
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Tres columnas de igual tamaño */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    gap: 10px;
+    width: 100%;
+    box-shadow:  10px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#pri{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tabla-header {
+    display: contents; /* Permite que los encabezados se distribuyan dentro de las columnas */
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.tabla-row {
+    border: 1px solid #ddd;
+    display: contents; /* Asegura que cada fila de datos se ajuste a la estructura de columnas */
+}
+
+.tabla div {
+    margin: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+.tabla div:nth-child(3n-1) { /* Alterna el color de las filas */
+    background-color: #f9f9f9;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: space-between; /* Distribuir espacio entre formulario y resultados */
+    align-items: flex-start;
+    margin: 40px;
+}
+
+.calcu{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.agregarFE{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    flex-direction: row;   /* Alinear los elementos en una fila */
+}
